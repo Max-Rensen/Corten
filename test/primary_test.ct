@@ -1,0 +1,38 @@
+//let i = "test";
+//print("Your input is: {{{}}}", input());
+//let j = 2 * 4 - (9 + 3) / 3;
+//print(j + 3);
+
+let fun(let a) {
+  return a + 1;
+}
+
+let a = input();
+print("length: {}\n", a.len());
+
+print(fun(1));
+flush("\n");
+
+print(if (fun(5) > 5) {
+  return 1;
+} else {
+  return 0;
+});
+
+print("\n");
+
+let print_fun(let x) {
+  print("{}{}", x, "\n");
+}
+
+print_fun(fun);
+
+let i = 0;
+while (i < 10) {
+  print("{}{}", i, "\n");
+  i = i + 1;
+  if (i > 5) {
+    print("Done");
+    break;
+  }
+}
